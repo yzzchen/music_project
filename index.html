@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodySpeak Forum - 聆聽共鳴，分享新聲</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Hanken Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#0047ff',
+                        brandWhite: '#ffffff',
+                        brandGray: '#f9f9fb',
+                        brandPink: '#fbcfe8',
+                        brandDark: '#111111'
+                    },
+                    borderRadius: {
+                        'custom': '4px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #111111;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 75% 40%, #fbcfe8 0%, rgba(255,255,255,0) 60%), #f9f9fb;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-brandDark pb-28">
+
+    <header class="sticky top-0 z-50 bg-brandWhite/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-wider text-brandBlue">MelodySpeak <span class="text-xs px-2 py-0.5 bg-brandBlue/10 text-brandBlue rounded-full ml-1 font-medium tracking-normal">論壇</span></a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-500">
+                <a href="#home" class="hover:text-brandBlue transition-colors">首頁</a>
+                <a href="#artists" class="hover:text-brandBlue transition-colors">精選歌手</a>
+                <a href="#share" class="hover:text-brandBlue transition-colors">發表體驗</a>
+                <a href="#forum" class="hover:text-brandBlue transition-colors">社群廣場</a>
+                <a href="#contact" class="hover:text-brandBlue transition-colors">聯絡我們</a>
+            </nav>
+            <div>
+                <a href="#share" class="bg-brandDark text-brandWhite px-5 py-2.5 rounded-custom text-sm font-semibold tracking-wide hover:bg-brandBlue transition-all shadow-sm">
+                    分享我的音樂/體驗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg min-h-[50vh] flex items-center relative overflow-hidden py-16">
+        <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 z-10">
+                <span class="text-xs font-bold tracking-widest text-brandBlue uppercase">Music Experience Forum</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark leading-tight">
+                    讓旋律對話，<br>用聲音記錄你的<span class="text-brandBlue">音樂體驗</span>
+                </h1>
+                <p class="text-gray-500 max-w-md leading-relaxed text-base font-light">
+                    這是一個卸下視覺包裝的音樂交流社群。在這裡上傳你喜愛的旋律、環境音錄製或創作，並寫下當下的呼吸與故事。
+                </p>
+                <div class="pt-2">
+                    <a href="#forum" class="inline-flex items-center space-x-3 bg-brandWhite border border-gray-200 text-brandDark px-6 py-3 rounded-custom hover:bg-brandGray transition-colors group">
+                        <span class="text-sm font-semibold tracking-wider">進入社群廣場</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex relative justify-center items-center h-[300px]">
+                <div class="absolute w-64 h-64 bg-brandPink/40 rounded-full filter blur-3xl animate-pulse"></div>
+                <div class="relative z-10 bg-white/40 p-6 backdrop-blur-sm rounded-custom border border-white/60 shadow-lg text-center max-w-xs">
+                    <p class="text-xs tracking-widest text-brandBlue font-bold uppercase mb-1">Live Feed</p>
+                    <p class="text-sm font-medium tracking-wide">目前已有 1,420 位成員</p>
+                    <p class="text-xs text-gray-400 mt-1">在此分享了獨一無二的聲音</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artists" class="py-24 bg-brandWhite">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="text-xs font-bold tracking-widest text-brandBlue uppercase">Featured Artists</span>
+                <h2 class="text-3xl font-bold tracking-tight mt-2">本週精選歌手</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group">
+                    <div class="aspect-square w-full bg-gray-100 rounded-custom overflow-hidden mb-3 relative">
+                        <img src="188be700-c6ee-45d2-8d38-48cdef0e7ac0.avif" alt="Artist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-medium text-base">Justin Bieber</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">popular music</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-square w-full bg-gray-100 rounded-custom overflow-hidden mb-3 relative">
+                        <img src="截圖 2026-05-26 下午1.56.01.png" alt="Artist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-medium text-base">&TEAM</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">K-pop music</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-square w-full bg-gray-100 rounded-custom overflow-hidden mb-3 relative">
+                        <img src="6285670f48781f959898.jpeg" alt="Artist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-medium text-base">NCT WISH</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">K-pop music</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-square w-full bg-gray-100 rounded-custom overflow-hidden mb-3 relative">
+                        <img src="ACK20260325000800881_01_i_P4.jpg" alt="Artist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-medium text-base">Stray Kids</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">K-pop music</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="share" class="py-24 bg-brandGray border-t border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold tracking-widest text-brandBlue uppercase">Share Your Sound</span>
+                <h2 class="text-3xl font-bold tracking-tight mt-2">發布你的音樂與短評</h2>
+                <p class="text-sm text-gray-400 mt-2">上傳你的音訊，讓整個討論區的朋友聽見你的故事</p>
+            </div>
+            
+            <form id="upload-form" class="bg-brandWhite p-8 rounded-custom shadow-sm border border-gray-100 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">音樂標題</label>
+                        <input type="text" id="input-title" required placeholder="例如：午後的微雨" class="w-full px-4 py-3 bg-brandGray border border-gray-100 rounded-custom text-sm focus:outline-none focus:border-brandBlue transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">分享者 / 創作者</label>
+                        <input type="text" id="input-artist" required placeholder="例如：Alex Lin" class="w-full px-4 py-3 bg-brandGray border border-gray-100 rounded-custom text-sm focus:outline-none focus:border-brandBlue transition-colors">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">音樂風格標籤</label>
+                    <select id="input-tag" class="w-full px-4 py-3 bg-brandGray border border-gray-100 rounded-custom text-sm focus:outline-none focus:border-brandBlue transition-colors">
+                        <option value="Lo-fi">Lo-fi 節奏</option>
+                        <option value="Ambient">Ambient 氛圍</option>
+                        <option value="Indie">Indie 獨立意識</option>
+                        <option value="Folk">Folk 現代民謠</option>
+                        <option value="Field Recording">Field Recording 環境採集</option>
+                        <option value="Other">Other 其他</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">聲音體驗描述 (故事/心得)</label>
+                    <textarea id="input-desc" required rows="3" placeholder="描述這段旋律背後的靈感、或是你聆聽這段聲音時的空間體感..." class="w-full px-4 py-3 bg-brandGray border border-gray-100 rounded-custom text-sm focus:outline-none focus:border-brandBlue transition-colors resize-none"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">音訊檔案 (必填)</label>
+                    <div class="border-2 border-dashed border-gray-200 bg-brandGray p-6 rounded-custom text-center relative hover:border-brandBlue transition-colors group">
+                        <input type="file" id="input-file" accept="audio/*" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                        <div class="space-y-1 pointer-events-none">
+                            <svg class="mx-auto w-8 h-8 text-gray-400 group-hover:text-brandBlue transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                            </svg>
+                            <p class="text-sm font-medium text-brandDark id-file-placeholder">點擊或拖放本機音訊檔案 (MP3, WAV)</p>
+                            <p class="text-xs text-gray-400">檔案將直接安全地載入至您的瀏覽器中播放</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <button type="submit" class="w-full md:w-auto bg-brandBlue text-brandWhite px-8 py-3 rounded-custom text-sm font-semibold hover:bg-opacity-90 transition-all shadow-sm">
+                        確認發布至社群廣場
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="forum" class="py-24 bg-brandWhite">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-12 flex justify-between items-end">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-brandBlue uppercase">Community Square</span>
+                    <h2 class="text-3xl font-bold tracking-tight mt-2">社群體驗廣場</h2>
+                </div>
+                <span class="text-xs text-gray-400 font-light" id="post-count">目前有 2 則討論</span>
+            </div>
+
+            <div id="forum-posts-container" class="space-y-6">
+                
+                <div class="track-item bg-brandGray border border-gray-100 p-6 rounded-custom flex flex-col md:flex-row justify-between items-start md:items-center gap-6" 
+                     data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                    <div class="space-y-3 flex-1">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs px-2.5 py-0.5 bg-brandWhite text-gray-500 rounded-custom border border-gray-100">Lo-fi</span>
+                            <span class="text-xs text-gray-400">由 @Kaelen 發表</span>
+                        </div>
+                        <div>
+                            <h3 class="track-title text-lg font-semibold text-brandDark">Midnight Mist</h3>
+                            <p class="track-artist text-xs text-brandBlue font-medium mt-0.5">創作者：Kaelen Vos</p>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed">
+                            這是我在台北凌晨三點下大雨時錄下的窗外雨聲，結合了點微弱的電子琴和弦。希望給此時同樣還沒入睡的你，帶來一點點空氣感的陪伴。
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-auto border-t md:border-t-0 pt-4 md:pt-0 border-gray-200/60">
+                        <span class="text-xs text-gray-400 font-medium md:mr-4">06:12</span>
+                        <button class="play-btn w-12 h-12 rounded-custom bg-brandDark text-brandWhite flex items-center justify-center hover:bg-brandBlue transition-colors focus:outline-none shadow-sm">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="track-item bg-brandGray border border-gray-100 p-6 rounded-custom flex flex-col md:flex-row justify-between items-start md:items-center gap-6" 
+                     data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+                    <div class="space-y-3 flex-1">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs px-2.5 py-0.5 bg-brandWhite text-gray-500 rounded-custom border border-gray-100">Indie</span>
+                            <span class="text-xs text-gray-400">由 @Emily_C 發表</span>
+                        </div>
+                        <div>
+                            <h3 class="track-title text-lg font-semibold text-brandDark">流浪的星群</h3>
+                            <p class="track-artist text-xs text-brandBlue font-medium mt-0.5">創作者：Emily Chen</p>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed">
+                            用不插電木吉他單純編寫的 Demo。歌詞寫的是都市裡每個人就像一顆迷航流浪的星球，雖然軌道疏離，但微光終究會交會。
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-auto border-t md:border-t-0 pt-4 md:pt-0 border-gray-200/60">
+                        <span class="text-xs text-gray-400 font-medium md:mr-4">07:05</span>
+                        <button class="play-btn w-12 h-12 rounded-custom bg-brandDark text-brandWhite flex items-center justify-center hover:bg-brandBlue transition-colors focus:outline-none shadow-sm">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="global-player" class="fixed bottom-0 left-0 right-0 bg-brandWhite/90 backdrop-blur-lg border-t border-gray-200 transform translate-y-full transition-transform duration-300 z-50 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 h-24 grid grid-cols-3 items-center">
+            <div class="flex items-center space-x-3 truncate">
+                <div class="w-11 h-11 bg-brandDark text-brandPink rounded-custom flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 animate-spin" style="animation-duration: 6s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                </div>
+                <div class="truncate">
+                    <p id="player-title" class="text-sm font-semibold text-brandDark truncate">未在播放</p>
+                    <p id="player-artist" class="text-xs text-gray-400 mt-0.5 truncate">-</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+                <button id="player-toggle-btn" class="w-10 h-10 rounded-full bg-brandDark text-brandWhite flex items-center justify-center hover:bg-brandBlue transition-colors focus:outline-none shadow-sm">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <div class="w-full flex items-center space-x-2 text-xs text-gray-400">
+                    <span id="player-current-time">00:00</span>
+                    <div id="progress-container" class="w-full h-1 bg-gray-200 rounded-full cursor-pointer relative group">
+                        <div id="progress-bar" class="h-full bg-brandBlue rounded-full w-0 transition-all duration-100"></div>
+                    </div>
+                    <span id="player-duration">00:00</span>
+                </div>
+            </div>
+
+            <div class="justify-self-end text-xs text-gray-400 font-light hidden sm:block">MelodySpeak Player</div>
+        </div>
+    </div>
+
+    <footer id="contact" class="bg-brandDark text-brandWhite py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 border-b border-gray-800 pb-12">
+            <div>
+                <h3 class="text-xl font-bold tracking-wider text-brandBlue mb-4">MelodySpeak</h3>
+                <p class="text-gray-400 text-sm max-w-sm font-light leading-relaxed">
+                    回歸聲音本質與情感共鳴的極簡主義音樂分享交流論壇。
+                </p>
+            </div>
+            <div class="space-y-2 text-sm text-gray-400 font-light">
+                <h4 class="text-white font-medium mb-3 tracking-wide">聯絡論壇小組</h4>
+                <p>Email: community@melodyspeak.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light">
+            <p>&copy; 2026 Abby. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const audio = new Audio();
+        let currentTrackItem = null;
+
+        // 選取播放器相關元件
+        const globalPlayer = document.getElementById('global-player');
+        const playerTitle = document.getElementById('player-title');
+        const playerArtist = document.getElementById('player-artist');
+        const playerToggleBtn = document.getElementById('player-toggle-btn');
+        const progressBar = document.getElementById('progress-bar');
+        const progressContainer = document.getElementById('progress-container');
+        const currentTimeEl = document.getElementById('player-current-time');
+        const durationEl = document.getElementById('player-duration');
+
+        // SVG 圖示
+        const playIcon = `<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`;
+        const pauseIcon = `<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+
+        // 格式化時間
+        function formatTime(seconds) {
+            if (isNaN(seconds)) return "00:00";
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // 重置社群貼文按鈕狀態
+        function resetAllButtons() {
+            document.querySelectorAll('.play-btn').forEach(btn => {
+                btn.innerHTML = playIcon;
+                btn.classList.remove('bg-brandBlue');
+                btn.classList.add('bg-brandDark');
+            });
+        }
+
+        // 音樂播放/暫停事件調度
+        function handleTrackPlayback(trackItem) {
+            const src = trackItem.getAttribute('data-src');
+            const title = trackItem.querySelector('.track-title').innerText;
+            const artist = trackItem.querySelector('.track-artist').innerText;
+            const btn = trackItem.querySelector('.play-btn');
+
+            if (currentTrackItem !== trackItem) {
+                resetAllButtons();
+                currentTrackItem = trackItem;
+                audio.src = src;
+                
+                playerTitle.innerText = title;
+                playerArtist.innerText = artist;
+                globalPlayer.classList.remove('translate-y-full');
+                
+                audio.play();
+                btn.innerHTML = pauseIcon;
+                btn.classList.remove('bg-brandDark');
+                btn.classList.add('bg-brandBlue');
+                playerToggleBtn.innerHTML = pauseIcon;
+            } else {
+                if (audio.paused) {
+                    audio.play();
+                    btn.innerHTML = pauseIcon;
+                    btn.classList.remove('bg-brandDark');
+                    btn.classList.add('bg-brandBlue');
+                    playerToggleBtn.innerHTML = pauseIcon;
+                } else {
+                    audio.pause();
+                    btn.innerHTML = playIcon;
+                    btn.classList.remove('bg-brandBlue');
+                    btn.classList.add('bg-brandDark');
+                    playerToggleBtn.innerHTML = playIcon;
+                }
+            }
+        }
+
+        // 為貼文牆的所有按鈕綁定點擊監聽 (使用事件委派以支援動態新增的貼文)
+        document.getElementById('forum-posts-container').addEventListener('click', function(e) {
+            const btn = e.target.closest('.play-btn');
+            if (btn) {
+                const trackItem = btn.closest('.track-item');
+                handleTrackPlayback(trackItem);
+            }
+        });
+
+        // 全域底端播放按鈕控制
+        playerToggleBtn.addEventListener('click', () => {
+            if (currentTrackItem) handleTrackPlayback(currentTrackItem);
+        });
+
+        // 進度條時間更新
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                const percent = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = `${percent}%`;
+                currentTimeEl.innerText = formatTime(audio.currentTime);
+                durationEl.innerText = formatTime(audio.duration);
+            }
+        });
+
+        progressContainer.addEventListener('click', (e) => {
+            const width = progressContainer.clientWidth;
+            const clickX = e.offsetX;
+            if (audio.duration) {
+                audio.currentTime = (clickX / width) * audio.duration;
+            }
+        });
+
+        audio.addEventListener('ended', () => {
+            resetAllButtons();
+            playerToggleBtn.innerHTML = playIcon;
+            progressBar.style.width = '0%';
+        });
+
+        // 監聽文件選擇狀態，優化 UI 文字提示
+        const fileInput = document.getElementById('input-file');
+        const filePlaceholder = document.querySelector('.id-file-placeholder');
+        fileInput.addEventListener('change', function() {
+            if(this.files.length > 0) {
+                filePlaceholder.innerText = `已選取音訊：${this.files[0].name}`;
+                filePlaceholder.classList.add('text-brandBlue');
+            }
+        });
+
+        // 處理真實論壇貼文發表與本地檔案解碼上傳
+        const uploadForm = document.getElementById('upload-form');
+        const postsContainer = document.getElementById('forum-posts-container');
+        const postCountEl = document.getElementById('post-count');
+
+        uploadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('input-title').value;
+            const artist = document.getElementById('input-artist').value;
+            const tag = document.getElementById('input-tag').value;
+            const desc = document.getElementById('input-desc').value;
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert('請選擇一個音訊檔案！');
+                return;
+            }
+
+            // 核心魔法：將使用者選擇的本機音訊檔案，轉為瀏覽器可直接播放的暫時性安全 URL 
+            const audioObjectURL = URL.createObjectURL(file);
+
+            // 建立全新的論壇體驗貼文
+            const newPostHtml = `
+                <div class="track-item bg-brandGray border border-gray-100 p-6 rounded-custom flex flex-col md:flex-row justify-between items-start md:items-center gap-6" 
+                     data-src="${audioObjectURL}">
+                    <div class="space-y-3 flex-1">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs px-2.5 py-0.5 bg-brandWhite text-gray-500 rounded-custom border border-gray-100">${tag}</span>
+                            <span class="text-xs text-brandBlue font-medium">剛剛發布的新體驗</span>
+                        </div>
+                        <div>
+                            <h3 class="track-title text-lg font-semibold text-brandDark">${title}</h3>
+                            <p class="track-artist text-xs text-gray-400 mt-0.5">創作者 / 分享者：${artist}</p>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed">${desc}</p>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-auto border-t md:border-t-0 pt-4 md:pt-0 border-gray-200/60">
+                        <span class="text-xs text-gray-400 font-medium md:mr-4">本地音訊</span>
+                        <button class="play-btn w-12 h-12 rounded-custom bg-brandDark text-brandWhite flex items-center justify-center hover:bg-brandBlue transition-colors focus:outline-none shadow-sm">
+                            ${playIcon}
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // 將新貼文插到論壇的最上方（最新貼文優先）
+            postsContainer.insertAdjacentHTML('afterbegin', newPostHtml);
+
+            // 更新貼文總數計數器
+            const totalPosts = document.querySelectorAll('#forum-posts-container .track-item').length;
+            postCountEl.innerText = `目前有 ${totalPosts} 則討論`;
+
+            // 重置表單與提示文字
+            uploadForm.reset();
+            filePlaceholder.innerText = "點擊或拖放本機音訊檔案 (MP3, WAV)";
+            filePlaceholder.classList.remove('text-brandBlue');
+
+            // 貼心提示並滾動到新貼文
+            alert('恭喜！您的音樂體驗已經成功發布到下方廣場！');
+            document.getElementById('forum').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
